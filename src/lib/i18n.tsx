@@ -106,7 +106,7 @@ const translations: Translations = {
   "contact.info.title": { en: "Get In Touch", ar: "تواصل معنا" },
   "contact.info.phone": { en: "Phone", ar: "الهاتف" },
   "contact.info.email": { en: "Email", ar: "البريد الإلكتروني" },
-  "contact.info.address": { en: "Jeddah, Saudi Arabia", ar: "جدة، المملكة العربية السعودية" },
+  "contact.info.address": { en: "JDBB5152, 5152 Yahya Al-Muallimi St, Jeddah, 23535, SA", ar: "JDBB5152، 5152 شارع يحيى المعلمي، جدة، 23535، SA" },
   "contact.info.hours": { en: "Working Hours: 8AM - 10PM, 7 days a week", ar: "ساعات العمل: 8 صباحاً - 10 مساءً، 7 أيام في الأسبوع" },
   "contact.cta.title": { en: "Call Now for Instant Service!", ar: "اتصل الآن للحصول على خدمة فورية!" },
   "contact.cta.or": { en: "or", ar: "أو" },
