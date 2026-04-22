@@ -3,7 +3,7 @@ import { Phone, MessageCircle, ShieldCheck, Clock, Award, Sparkles } from "lucid
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/lib/i18n";
 import heroPoster from "@/assets/hero-repair.jpg";
-import heroVideoAsset from "@/assets/hero-repair-video.mp4.asset.json";
+
 
 interface HeroProps {
   variant?: "home" | "page";
@@ -50,7 +50,7 @@ export function Hero({
         preload="metadata"
         poster={heroPoster}
       >
-        <source src={heroVideoAsset.url} type="video/mp4" />
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-technician-checking-a-washing-machine-42867-large.mp4" type="video/mp4" />
       </video>
 
       {/* Gradient overlay */}
