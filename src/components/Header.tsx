@@ -57,11 +57,11 @@ export function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-2.5 group">
-              <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-md group-hover:shadow-glow transition-shadow">
-                <Wrench className="w-5 h-5 text-primary-foreground" strokeWidth={2.5} />
+              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-md group-hover:shadow-glow transition-shadow">
+                <img src="/logo.png" alt="Colors and Shapes Logo" className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col">
-                <span className="font-extrabold text-lg text-foreground tracking-tight leading-tight">FixPro</span>
+                <span className="font-extrabold text-lg text-foreground tracking-tight leading-tight">Colors and Shapes</span>
                 <span className="text-[10px] text-muted-foreground leading-tight font-medium">{lang === "ar" ? "إصلاح الأجهزة" : "Appliance Repair"}</span>
               </div>
             </Link>

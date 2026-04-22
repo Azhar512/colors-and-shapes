@@ -1,3 +1,3 @@
-# Home Bliss Visuals - FixPro Project
+# Home Bliss Visuals - Colors and Shapes Project
 
 TODO: Document your project here

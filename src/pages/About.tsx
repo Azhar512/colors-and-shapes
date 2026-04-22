@@ -60,7 +60,7 @@ export default function About() {
             viewport={{ once: true }}
             className="rounded-3xl overflow-hidden shadow-hero mb-14"
           >
-            <img src={teamPhoto} alt="FixPro Team" className="w-full h-64 md:h-96 object-cover" loading="lazy" />
+            <img src={teamPhoto} alt="Colors and Shapes Team" className="w-full h-64 md:h-96 object-cover" loading="lazy" />
           </motion.div>
 
           <div className="space-y-6">

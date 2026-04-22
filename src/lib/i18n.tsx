@@ -23,7 +23,7 @@ const translations: Translations = {
 
   "hero.services.title": { en: "Expert Services", ar: "خدمات متخصصة" },
   "hero.services.subtitle": { en: "Choose your appliance repair", ar: "اختر إصلاح جهازك" },
-  "hero.about.title": { en: "About FixPro", ar: "عن FixPro" },
+  "hero.about.title": { en: "About Colors and Shapes", ar: "عن Colors and Shapes" },
   "hero.about.subtitle": { en: "15+ years fixing what matters", ar: "أكثر من 15 عاماً نصلح ما يهم" },
   "hero.contact.title": { en: "Get in Touch", ar: "تواصل معنا" },
   "hero.contact.subtitle": { en: "Free quote in minutes", ar: "عرض سعر مجاني خلال دقائق" },

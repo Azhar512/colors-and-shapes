@@ -26,7 +26,7 @@ export default function Contact() {
     <>
       <Helmet>
         <title>Contact Us — Colors and Shapes Jeddah</title>
-        <meta name="description" content="Contact FixPro for fast appliance repair in Jeddah. Call, WhatsApp, or fill out our form for a free consultation." />
+        <meta name="description" content="Contact Colors and Shapes for fast appliance repair in Jeddah. Call, WhatsApp, or fill out our form for a free consultation." />
       </Helmet>
 
       <Hero
@@ -123,13 +123,13 @@ export default function Contact() {
                       </div>
                     </a>
                   </div>
-                  <a href="mailto:info@fixpro.sa" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group">
+                  <a href="mailto:info@Colors and Shapes.sa" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group">
                     <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shrink-0 shadow-md group-hover:scale-105 transition-transform">
                       <Mail className="w-5 h-5 text-primary-foreground" />
                     </div>
                     <div>
                       <div className="text-xs text-muted-foreground">{t("contact.info.email")}</div>
-                      <div className="font-semibold text-foreground">info@fixpro.sa</div>
+                      <div className="font-semibold text-foreground">info@Colors and Shapes.sa</div>
                     </div>
                   </a>
                   <div className="flex items-center gap-3 text-sm">
@@ -162,7 +162,7 @@ export default function Contact() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="FixPro Location - Jeddah"
+                  title="Colors and Shapes Location - Jeddah"
                 />
               </div>
             </motion.div>

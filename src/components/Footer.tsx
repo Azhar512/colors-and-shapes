@@ -12,11 +12,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-cta flex items-center justify-center shadow-cta">
-                <Wrench className="w-5 h-5 text-white" strokeWidth={2.5} />
+              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-cta">
+                <img src="/logo.png" alt="Colors and Shapes Logo" className="w-full h-full object-cover" />
               </div>
               <div>
-                <div className="font-extrabold text-lg">FixPro</div>
+                <div className="font-extrabold text-lg">Colors and Shapes</div>
                 <div className="text-[11px] text-section-dark-foreground/60">Jeddah Appliance Repair</div>
               </div>
             </div>
@@ -51,8 +51,8 @@ export function Footer() {
                   <Phone className="w-4 h-4 shrink-0" /> 0543650900
                 </a>
               </div>
-              <a href="mailto:info@fixpro.sa" className="flex items-center gap-2.5 text-sm text-section-dark-foreground/70 hover:text-section-dark-foreground transition-colors">
-                <Mail className="w-4 h-4 shrink-0" /> info@fixpro.sa
+              <a href="mailto:info@Colors and Shapes.sa" className="flex items-center gap-2.5 text-sm text-section-dark-foreground/70 hover:text-section-dark-foreground transition-colors">
+                <Mail className="w-4 h-4 shrink-0" /> info@Colors and Shapes.sa
               </a>
               <div className="flex items-center gap-2.5 text-sm text-section-dark-foreground/70">
                 <MapPin className="w-4 h-4 shrink-0" /> {t("contact.info.address")}
@@ -62,7 +62,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-10 pt-6 text-center text-sm text-section-dark-foreground/50">
-          © {new Date().getFullYear()} FixPro. {t("footer.rights")}
+          © {new Date().getFullYear()} Colors and Shapes. {t("footer.rights")}
         </div>
       </div>
     </footer>

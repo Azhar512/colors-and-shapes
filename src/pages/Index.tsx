@@ -14,7 +14,7 @@ const testimonials = [
   { name: "Ahmed Al-Rashid", nameAr: "أحمد الراشد", text: "Excellent service! They fixed my washing machine the same day I called. Highly recommended.", textAr: "خدمة ممتازة! أصلحوا غسالتي في نفس اليوم الذي اتصلت فيه. أنصح بهم بشدة.", rating: 5 },
   { name: "Fatima Hassan", nameAr: "فاطمة حسن", text: "Very professional technicians. They explained the problem clearly and fixed it quickly. Fair pricing too.", textAr: "فنيون محترفون جداً. شرحوا المشكلة بوضوح وأصلحوها بسرعة. أسعار عادلة أيضاً.", rating: 5 },
   { name: "Mohammed Al-Sayed", nameAr: "محمد السيد", text: "My AC broke during summer. They came within 2 hours and fixed it. Lifesavers!", textAr: "تعطل مكيفي في الصيف. جاؤوا خلال ساعتين وأصلحوه. منقذون!", rating: 5 },
-  { name: "Sara Abdullah", nameAr: "سارة عبدالله", text: "I've used FixPro three times now. Always reliable and professional. They're my go-to for all appliance repairs.", textAr: "استخدمت FixPro ثلاث مرات. دائماً موثوقون ومحترفون. هم خياري الأول لجميع الإصلاحات.", rating: 4 },
+  { name: "Sara Abdullah", nameAr: "سارة عبدالله", text: "I've used Colors and Shapes three times now. Always reliable and professional. They're my go-to for all appliance repairs.", textAr: "استخدمت Colors and Shapes ثلاث مرات. دائماً موثوقون ومحترفون. هم خياري الأول لجميع الإصلاحات.", rating: 4 },
 ];
 
 const areas = ["Al Hamra", "Al Rawdah", "Al Safa", "Al Zahra", "Al Muhammadiyah", "Al Naseem", "Al Salamah", "Obhur", "Al Marwah", "Al Faisaliyah", "Al Andalus", "Al Balad"];
