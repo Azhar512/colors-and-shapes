@@ -50,7 +50,7 @@ export function Hero({
         preload="metadata"
         poster={heroPoster}
       >
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-technician-checking-a-washing-machine-42867-large.mp4" type="video/mp4" />
+        <source src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27ee353a1c87d400196883a45c36195655519f7&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
       </video>
 
       {/* Gradient overlay */}
