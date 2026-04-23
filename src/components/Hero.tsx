@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Phone, MessageCircle, ShieldCheck, Clock, Award, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -26,6 +27,7 @@ export function Hero({
   showStats = false,
   children,
 }: HeroProps) {
+  const videoRef = useRef<HTMLVideoElement>(null);
   const { t, dir } = useI18n();
   const isHome = variant === "home";
 
@@ -34,6 +36,14 @@ export function Hero({
     { icon: ShieldCheck, label: t("trust.warranty") },
     { icon: Award, label: t("trust.licensed") },
   ];
+  
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => {
+        console.error("Video autoplay failed:", error);
+      });
+    }
+  }, []);
 
   return (
     <section
@@ -42,12 +52,13 @@ export function Hero({
     >
       {/* Background video */}
       <video
+        ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover"
         autoPlay
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="auto"
         poster={heroPoster}
       >
         <source src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27ee353a1c87d400196883a45c36195655519f7&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
