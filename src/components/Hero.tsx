@@ -53,10 +53,9 @@ export function Hero({
       {/* Background YouTube Video */}
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
         <iframe
-          className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2"
-          src="https://www.youtube.com/embed/DkKVvSiwOwE?autoplay=1&mute=1&loop=1&playlist=DkKVvSiwOwE&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-[177.77vh] h-[56.25vw] -translate-x-1/2 -translate-y-1/2 scale-[2.5]"
+          src="https://www.youtube.com/embed/DkKVvSiwOwE?autoplay=1&mute=1&loop=1&playlist=DkKVvSiwOwE&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1"
           allow="autoplay; encrypted-media"
-          allowFullScreen
           title="Hero Background Video"
         />
       </div>
