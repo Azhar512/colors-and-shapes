@@ -50,19 +50,16 @@ export function Hero({
       className={`relative isolate overflow-hidden ${isHome ? "min-h-[88vh]" : "min-h-[60vh]"}`}
       dir={dir}
     >
-      {/* Background video */}
-      <video
-        ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        poster={heroPoster}
-      >
-        <source src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27ee353a1c87d400196883a45c36195655519f7&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
-      </video>
+      {/* Background YouTube Video */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
+        <iframe
+          className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2"
+          src="https://www.youtube.com/embed/DkKVvSiwOwE?autoplay=1&mute=1&loop=1&playlist=DkKVvSiwOwE&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+          title="Hero Background Video"
+        />
+      </div>
 
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-overlay" />
