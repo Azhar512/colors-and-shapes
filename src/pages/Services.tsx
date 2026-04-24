@@ -31,9 +31,7 @@ export default function Services() {
 
   const services = [
     { icon: Snowflake, image: serviceAc, titleKey: "services.ac.title", descKey: "services.ac.desc", issuesKey: "services.ac.issues" },
-    { icon: WashingMachine, image: serviceWashing, titleKey: "services.washing.title", descKey: "services.washing.desc", issuesKey: "services.washing.issues" },
     { icon: Snowflake, image: serviceFridge, titleKey: "services.fridge.title", descKey: "services.fridge.desc", issuesKey: "services.fridge.issues" },
-    { icon: CookingPot, image: serviceKitchen, titleKey: "services.kitchen.title", descKey: "services.kitchen.desc", issuesKey: "services.kitchen.issues" },
   ];
 
   const acSubServices = [
