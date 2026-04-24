@@ -64,7 +64,7 @@ export function Hero({
     >
       {/* Services Marquee at Top */}
       <div className="relative z-20 bg-white/5 border-b border-white/10 overflow-hidden py-3 backdrop-blur-sm">
-        <div className="flex gap-8 animate-marquee w-max items-center whitespace-nowrap">
+        <div dir="ltr" className="flex gap-8 animate-marquee w-max items-center whitespace-nowrap">
           {[...allServices, ...allServices, ...allServices, ...allServices].map((svcKey, i) => (
             <div key={i} className="flex items-center gap-3 text-[10px] sm:text-xs font-bold text-white/80 uppercase tracking-widest">
               <span className="w-1.5 h-1.5 rounded-full bg-cta shadow-cta" />
