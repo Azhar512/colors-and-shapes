@@ -82,7 +82,7 @@ export function Header() {
                 {lang === "en" ? "العربية" : "English"}
               </button>
 
-              <a href="tel:0580706770" className="hidden sm:inline-flex">
+              <a href="tel:0543650900" className="hidden sm:inline-flex">
                 <Button variant="cta" size="sm" className="gap-1.5 shadow-cta">
                   <Phone className="w-3.5 h-3.5" />
                   {t("hero.cta.call")}
@@ -118,9 +118,9 @@ export function Header() {
                   {link.label}
                 </NavLink>
               ))}
-              <a href="tel:0580706770" className="block px-4 py-2.5 rounded-lg text-sm font-semibold text-cta">
+              <a href="tel:0543650900" className="block px-4 py-2.5 rounded-lg text-sm font-semibold text-cta">
                 <Phone className="w-4 h-4 inline mr-2" />
-                0580706770 / 0543650900
+                0543650900
               </a>
             </div>
           </div>

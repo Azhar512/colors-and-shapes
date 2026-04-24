@@ -139,7 +139,7 @@ export default function Index() {
                 <div className="p-5">
                   <h3 className="font-bold text-foreground mb-2">{t(svc.titleKey)}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">{t(svc.descKey)}</p>
-                  <a href="tel:0580706770" className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-cta hover:gap-2 transition-all">
+                  <a href="tel:0543650900" className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-cta hover:gap-2 transition-all">
                     <Phone className="w-3.5 h-3.5" /> {t("hero.cta.call")}
                   </a>
                 </div>
@@ -198,7 +198,7 @@ export default function Index() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <a href="tel:0580706770">
+            <a href="tel:0543650900">
               <Button variant="cta" size="lg" className="gap-2 shadow-cta">
                 <Phone className="w-5 h-5" /> {t("hero.cta.call")}
               </Button>
@@ -266,9 +266,9 @@ export default function Index() {
           </div>
           <div className="mt-10">
             <p className="text-xl md:text-2xl font-bold text-cta-glow mb-4">{t("cta.click")}</p>
-            <a href="tel:0580706770" className="text-3xl md:text-5xl font-extrabold tracking-tight hover:text-cta-glow transition-colors">0580706770 / 0543650900</a>
+            <a href="tel:0543650900" className="text-3xl md:text-5xl font-extrabold tracking-tight hover:text-cta-glow transition-colors">0543650900</a>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a href="tel:0580706770">
+              <a href="tel:0543650900">
                 <Button variant="cta" size="lg" className="gap-2 shadow-cta">
                   <Phone className="w-5 h-5" /> {t("hero.cta.call")}
                 </Button>
@@ -302,14 +302,9 @@ export default function Index() {
           <h2 className="text-3xl md:text-4xl font-extrabold">{t("cta.ready")}</h2>
           <p className="mt-3 text-hero-foreground/80 text-lg">{t("cta.desc")}</p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a href="tel:0580706770">
+            <a href="tel:0543650900">
               <Button variant="cta" size="lg" className="gap-2 shadow-cta">
                 <Phone className="w-5 h-5" /> {t("hero.cta.call")}
-              </Button>
-            </a>
-            <a href="https://wa.me/966543650900" target="_blank" rel="noopener noreferrer">
-              <Button variant="hero-outline" size="lg" className="gap-2">
-                <MessageCircle className="w-5 h-5" /> {t("hero.cta.whatsapp")}
               </Button>
             </a>
           </div>

@@ -148,14 +148,9 @@ export function Hero({
               transition={{ duration: 0.7, delay: 0.3 }}
               className="mt-8 flex flex-wrap gap-3"
             >
-              <a href="tel:0580706770">
+              <a href="tel:0543650900">
                 <Button variant="cta" size="lg" className="gap-2 shadow-cta">
                   <Phone className="w-5 h-5" /> {t("hero.cta.call")}
-                </Button>
-              </a>
-              <a href="https://wa.me/966543650900" target="_blank" rel="noopener noreferrer">
-                <Button variant="hero-outline" size="lg" className="gap-2">
-                  <MessageCircle className="w-5 h-5" /> {t("hero.cta.whatsapp")}
                 </Button>
               </a>
             </motion.div>

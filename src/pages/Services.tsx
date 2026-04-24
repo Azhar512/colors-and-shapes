@@ -97,14 +97,9 @@ export default function Services() {
                       <p className="text-sm text-muted-foreground">{t(svc.issuesKey)}</p>
                     </div>
                     <div className="flex flex-wrap gap-3">
-                      <a href="tel:0580706770">
-                        <Button variant="cta" className="gap-2 shadow-cta">
+                      <a href="tel:0543650900" className="w-full sm:w-auto">
+                        <Button variant="cta" className="w-full gap-2 shadow-cta">
                           <Phone className="w-4 h-4" /> {t("hero.cta.call")}
-                        </Button>
-                      </a>
-                      <a href="https://wa.me/966543650900" target="_blank" rel="noopener noreferrer">
-                        <Button variant="whatsapp" className="gap-2">
-                          <MessageCircle className="w-4 h-4" /> {t("hero.cta.whatsapp")}
                         </Button>
                       </a>
                     </div>
@@ -150,15 +145,10 @@ export default function Services() {
                     </div>
                   </div>
                   {sub.descKey && <p className="text-sm text-muted-foreground leading-relaxed mb-6 flex-grow">{t(sub.descKey)}</p>}
-                  <div className="flex gap-2 mt-auto">
-                    <a href="tel:0580706770" className="flex-1">
-                      <Button variant="cta" size="sm" className="w-full h-8 text-[10px] gap-1 px-2 shadow-cta">
-                        <Phone className="w-3 h-3" /> {t("hero.cta.call")}
-                      </Button>
-                    </a>
-                    <a href="https://wa.me/966543650900" target="_blank" rel="noopener noreferrer" className="flex-1">
-                      <Button variant="whatsapp" size="sm" className="w-full h-8 text-[10px] gap-1 px-2">
-                        <MessageCircle className="w-3 h-3" /> WhatsApp
+                  <div className="mt-auto">
+                    <a href="tel:0543650900" className="block">
+                      <Button variant="cta" size="sm" className="w-full h-9 text-[11px] gap-1.5 shadow-cta uppercase font-bold">
+                        <Phone className="w-3.5 h-3.5" /> {t("hero.cta.call")}
                       </Button>
                     </a>
                   </div>
@@ -203,15 +193,10 @@ export default function Services() {
                     </div>
                   </div>
                   {sub.descKey && <p className="text-sm text-muted-foreground leading-relaxed mb-6 flex-grow">{t(sub.descKey)}</p>}
-                  <div className="flex gap-2 mt-auto">
-                    <a href="tel:0580706770" className="flex-1">
-                      <Button variant="cta" size="sm" className="w-full h-8 text-[10px] gap-1 px-2 shadow-cta">
-                        <Phone className="w-3 h-3" /> {t("hero.cta.call")}
-                      </Button>
-                    </a>
-                    <a href="https://wa.me/966543650900" target="_blank" rel="noopener noreferrer" className="flex-1">
-                      <Button variant="whatsapp" size="sm" className="w-full h-8 text-[10px] gap-1 px-2">
-                        <MessageCircle className="w-3 h-3" /> WhatsApp
+                  <div className="mt-auto">
+                    <a href="tel:0543650900" className="block">
+                      <Button variant="cta" size="sm" className="w-full h-9 text-[11px] gap-1.5 shadow-cta uppercase font-bold">
+                        <Phone className="w-3.5 h-3.5" /> {t("hero.cta.call")}
                       </Button>
                     </a>
                   </div>

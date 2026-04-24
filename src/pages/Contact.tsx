@@ -137,15 +137,6 @@ export default function Contact() {
                 <h3 className="font-bold text-foreground mb-5">{t("contact.info.title")}</h3>
                 <div className="space-y-4">
                   <div className="space-y-4">
-                    <a href="tel:0580706770" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group">
-                      <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shrink-0 shadow-md group-hover:scale-105 transition-transform">
-                        <Phone className="w-5 h-5 text-primary-foreground" />
-                      </div>
-                      <div>
-                        <div className="text-xs text-muted-foreground">{t("contact.info.phone")}</div>
-                        <div className="font-semibold text-foreground">0580706770</div>
-                      </div>
-                    </a>
                     <a href="tel:0543650900" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group">
                       <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shrink-0 shadow-md group-hover:scale-105 transition-transform">
                         <Phone className="w-5 h-5 text-primary-foreground" />
@@ -180,11 +171,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <a href="https://wa.me/966543650900" target="_blank" rel="noopener noreferrer" className="block">
-                <Button variant="whatsapp" size="lg" className="w-full gap-2">
-                  <MessageCircle className="w-5 h-5" /> {t("hero.cta.whatsapp")}
-                </Button>
-              </a>
+
 
               <div className="bg-card rounded-3xl overflow-hidden shadow-card">
                 <div className="relative h-48 overflow-hidden border-b border-border">

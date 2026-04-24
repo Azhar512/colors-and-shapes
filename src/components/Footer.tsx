@@ -45,9 +45,6 @@ export function Footer() {
             <h3 className="font-semibold text-sm uppercase tracking-wider mb-4 text-cta">{t("footer.contact")}</h3>
             <div className="space-y-3">
               <div className="space-y-3">
-                <a href="tel:0580706770" className="flex items-center gap-2.5 text-sm text-section-dark-foreground/70 hover:text-section-dark-foreground transition-colors">
-                  <Phone className="w-4 h-4 shrink-0" /> 0580706770
-                </a>
                 <a href="tel:0543650900" className="flex items-center gap-2.5 text-sm text-section-dark-foreground/70 hover:text-section-dark-foreground transition-colors">
                   <Phone className="w-4 h-4 shrink-0" /> 0543650900
                 </a>
