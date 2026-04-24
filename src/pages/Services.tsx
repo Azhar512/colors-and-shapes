@@ -45,11 +45,11 @@ export default function Services() {
     { icon: Activity, titleKey: "services.ac.cassette", descKey: "services.ac.cassette.desc", image: serviceCassetteCustom },
     { icon: ArrowDownToLine, titleKey: "services.ac.duct", descKey: "services.ac.duct.desc", image: serviceDuctCustom },
     { icon: Activity, titleKey: "services.ac.pipe", descKey: "services.ac.pipe.desc", image: servicePipeCustom },
+    { icon: Box, titleKey: "services.ac.package", descKey: "services.ac.package.desc", image: servicePackageCustom },
+    { icon: Recycle, titleKey: "services.buying.windowSplit", descKey: "services.buying.windowSplit.desc", image: acBuying },
   ];
 
   const buyingServices = [
-    { icon: Recycle, titleKey: "services.buying.windowSplit", descKey: "services.buying.windowSplit.desc", image: acBuying },
-    { icon: Box, titleKey: "services.ac.package", descKey: "services.ac.package.desc", image: servicePackageCustom },
     { icon: Recycle, titleKey: "services.buying.old", descKey: "services.buying.old.desc", image: serviceOldAcBuyer },
     { icon: Coins, titleKey: "services.buying.scrap", descKey: "services.buying.scrap.desc", image: serviceScrapAcBuyer },
     { icon: Coins, titleKey: "services.buying.metals", descKey: "services.buying.metals.desc", image: serviceMetalsBuyer },
@@ -164,7 +164,7 @@ export default function Services() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-extrabold text-foreground text-center mb-3">Recycling & Buying</h2>
           <div className="mx-auto w-16 h-1 rounded-full bg-gradient-to-br from-primary to-primary/70 mb-10" />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {buyingServices.map((sub, i) => (
               <motion.div
                 key={i}
