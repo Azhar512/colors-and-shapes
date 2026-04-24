@@ -172,14 +172,14 @@ interface I18nContextType {
 }
 
 const I18nContext = createContext<I18nContextType>({
-  lang: "en",
+  lang: "ar",
   setLang: () => {},
   t: (key: string) => key,
-  dir: "ltr",
+  dir: "rtl",
 });
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLang] = useState<Lang>("ar");
 
   const t = useCallback((key: string) => translations[key]?.[lang] ?? key, [lang]);
 
