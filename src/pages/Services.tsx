@@ -21,6 +21,7 @@ import serviceWallCustom from "@/assets/service-wall-custom.jpg";
 import serviceCassetteCustom from "@/assets/service-cassette-custom.jpg";
 import serviceDuctCustom from "@/assets/service-duct-custom.jpg";
 import servicePipeCustom from "@/assets/service-pipe-custom.jpg";
+import servicePackageCustom from "@/assets/service-package-custom.jpg";
 
 export default function Services() {
   const { t } = useI18n();
@@ -43,7 +44,7 @@ export default function Services() {
     { icon: Activity, titleKey: "services.ac.cassette", descKey: "services.ac.cassette.desc", image: serviceCassetteCustom },
     { icon: ArrowDownToLine, titleKey: "services.ac.duct", descKey: "services.ac.duct.desc", image: serviceDuctCustom },
     { icon: Activity, titleKey: "services.ac.pipe", descKey: "services.ac.pipe.desc", image: servicePipeCustom },
-    { icon: Box, titleKey: "services.ac.package", descKey: "services.ac.package.desc", image: "https://images.pexels.com/photos/3825582/pexels-photo-3825582.jpeg?auto=compress&cs=tinysrgb&w=600" },
+    { icon: Box, titleKey: "services.ac.package", descKey: "services.ac.package.desc", image: servicePackageCustom },
   ];
 
   const buyingServices = [
