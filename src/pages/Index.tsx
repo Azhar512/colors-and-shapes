@@ -8,7 +8,8 @@ import { useI18n } from "@/lib/i18n";
 import serviceAc from "@/assets/service-ac.jpg";
 import serviceWashing from "@/assets/service-washing.jpg";
 import serviceFridge from "@/assets/service-fridge.jpg";
-import serviceKitchen from "@/assets/service-kitchen.jpg";
+import serviceCleaningCustom from "@/assets/service-cleaning-v2.jpg";
+import serviceInstallCustom from "@/assets/service-install-custom.jpg";
 
 const testimonials = [
   { name: "Ahmed Al-Rashid", nameAr: "أحمد الراشد", text: "Excellent service! They fixed my washing machine the same day I called. Highly recommended.", textAr: "خدمة ممتازة! أصلحوا غسالتي في نفس اليوم الذي اتصلت فيه. أنصح بهم بشدة.", rating: 5 },
@@ -27,6 +28,8 @@ export default function Index() {
   const serviceCards = [
     { icon: Snowflake, image: serviceAc, titleKey: "services.ac.title", descKey: "services.ac.desc" },
     { icon: Snowflake, image: serviceFridge, titleKey: "services.fridge.title", descKey: "services.fridge.desc" },
+    { icon: Wrench, image: serviceInstallCustom, titleKey: "services.ac.install", descKey: "services.ac.install.desc" },
+    { icon: Snowflake, image: serviceCleaningCustom, titleKey: "services.ac.cleaning", descKey: "services.ac.cleaning.desc" },
   ];
 
   const quickServices = [
