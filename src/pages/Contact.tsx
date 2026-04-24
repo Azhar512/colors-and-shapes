@@ -5,6 +5,7 @@ import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Hero } from "@/components/Hero";
 import { useI18n } from "@/lib/i18n";
+import shopLocation from "@/assets/shop-location.jpg";
 
 export default function Contact() {
   const { t, lang } = useI18n();
@@ -186,6 +187,13 @@ export default function Contact() {
               </a>
 
               <div className="bg-card rounded-3xl overflow-hidden shadow-card">
+                <div className="relative h-48 overflow-hidden border-b border-border">
+                  <img src={shopLocation} alt="Colors and Shapes Shop Location" className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <div className="absolute bottom-3 left-3 text-white font-bold text-sm drop-shadow-md">
+                    {t("contact.info.title")}
+                  </div>
+                </div>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237856.4506987!2d39.0574!3d21.4858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01fb1137e59%3A0xe059579737b118db!2sJeddah%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1"
                   width="100%"
