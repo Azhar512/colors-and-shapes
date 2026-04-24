@@ -26,9 +26,7 @@ export default function Index() {
 
   const serviceCards = [
     { icon: Snowflake, image: serviceAc, titleKey: "services.ac.title", descKey: "services.ac.desc" },
-    { icon: WashingMachine, image: serviceWashing, titleKey: "services.washing.title", descKey: "services.washing.desc" },
     { icon: Snowflake, image: serviceFridge, titleKey: "services.fridge.title", descKey: "services.fridge.desc" },
-    { icon: CookingPot, image: serviceKitchen, titleKey: "services.kitchen.title", descKey: "services.kitchen.desc" },
   ];
 
   const quickServices = [
