@@ -13,6 +13,7 @@ import acBuying from "@/assets/ac-buying.png";
 import acPiping from "@/assets/ac-piping.png";
 import serviceCleaningCustom from "@/assets/service-cleaning-v2.jpg";
 import serviceGasCustom from "@/assets/service-gas-custom.jpg";
+import serviceRepairCustom from "@/assets/service-repair-custom.jpg";
 
 export default function Services() {
   const { t } = useI18n();
@@ -27,7 +28,7 @@ export default function Services() {
   const acSubServices = [
     { icon: Wrench, titleKey: "services.ac.cleaning", descKey: "services.ac.cleaning.desc", image: serviceCleaningCustom },
     { icon: Snowflake, titleKey: "services.ac.gas", descKey: "services.ac.gas.desc", image: serviceGasCustom },
-    { icon: Zap, titleKey: "services.ac.electrical", descKey: "services.ac.electrical.desc", image: "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=600" },
+    { icon: Zap, titleKey: "services.ac.electrical", descKey: "services.ac.electrical.desc", image: serviceRepairCustom },
     { icon: CheckCircle2, titleKey: "services.ac.install", descKey: "services.ac.install.desc", image: "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=600" },
     { icon: Wind, titleKey: "services.ac.split", descKey: "services.ac.split.desc", image: "https://images.pexels.com/photos/10184427/pexels-photo-10184427.jpeg?auto=compress&cs=tinysrgb&w=600" },
     { icon: Layout, titleKey: "services.ac.window", descKey: "services.ac.window.desc", image: "https://images.pexels.com/photos/2034360/pexels-photo-2034360.jpeg?auto=compress&cs=tinysrgb&w=600" },
