@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Wrench, Facebook, Twitter, Instagram } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
+import logoNew from "@/assets/logo-new.jpg";
 
 export function Footer() {
   const { t, dir } = useI18n();
@@ -13,7 +14,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2.5 mb-4">
               <div className="w-10 h-10 rounded-xl overflow-hidden shadow-cta">
-                <img src="/logo.png" alt="Colors and Shapes Logo" className="w-full h-full object-cover" />
+                <img src={logoNew} alt="Colors and Shapes Logo" className="w-full h-full object-cover" />
               </div>
               <div>
                 <div className="font-extrabold text-lg">Colors and Shapes</div>

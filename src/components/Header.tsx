@@ -4,6 +4,7 @@ import { Phone, Menu, X, Globe, Wrench } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logoNew from "@/assets/logo-new.jpg";
 
 export function PromoBanner() {
   const { t } = useI18n();
@@ -58,7 +59,7 @@ export function Header() {
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-2.5 group">
               <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-md group-hover:shadow-glow transition-shadow">
-                <img src="/logo.png" alt="Colors and Shapes Logo" className="w-full h-full object-cover" />
+                <img src={logoNew} alt="Colors and Shapes Logo" className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-lg text-foreground tracking-tight leading-tight">Colors and Shapes</span>
