@@ -120,8 +120,8 @@ export default function Services() {
                 className="bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all hover:-translate-y-1 flex flex-col"
               >
                 {sub.image && (
-                  <div className="h-64 relative">
-                    <img src={sub.image} alt={t(sub.titleKey)} className="w-full h-full object-cover object-top" />
+                  <div className="h-64 relative overflow-hidden">
+                    <img src={sub.image} alt={t(sub.titleKey)} className="w-full h-full object-cover object-center scale-125 transition-transform duration-500 hover:scale-150" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                   </div>
                 )}
@@ -169,8 +169,8 @@ export default function Services() {
                 className="bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all hover:-translate-y-1 flex flex-col"
               >
                 {sub.image && (
-                  <div className="h-64 relative">
-                    <img src={sub.image} alt={t(sub.titleKey)} className="w-full h-full object-cover object-top" />
+                  <div className="h-64 relative overflow-hidden">
+                    <img src={sub.image} alt={t(sub.titleKey)} className="w-full h-full object-cover object-center scale-125 transition-transform duration-500 hover:scale-150" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                   </div>
                 )}
