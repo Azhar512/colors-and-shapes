@@ -24,19 +24,19 @@ export default function Services() {
     { icon: Snowflake, titleKey: "services.ac.gas", descKey: "services.ac.gas.desc" },
     { icon: Zap, titleKey: "services.ac.electrical", descKey: "services.ac.electrical.desc" },
     { icon: CheckCircle2, titleKey: "services.ac.install", descKey: "services.ac.install.desc" },
-    { icon: Wind, titleKey: "services.ac.split", descKey: "" },
-    { icon: Layout, titleKey: "services.ac.window", descKey: "" },
-    { icon: Grid, titleKey: "services.ac.wall", descKey: "" },
-    { icon: Activity, titleKey: "services.ac.cassette", descKey: "" },
-    { icon: ArrowDownToLine, titleKey: "services.ac.duct", descKey: "" },
-    { icon: Activity, titleKey: "services.ac.pipe", descKey: "" },
-    { icon: Box, titleKey: "services.ac.package", descKey: "" },
+    { icon: Wind, titleKey: "services.ac.split", descKey: "services.ac.split.desc" },
+    { icon: Layout, titleKey: "services.ac.window", descKey: "services.ac.window.desc" },
+    { icon: Grid, titleKey: "services.ac.wall", descKey: "services.ac.wall.desc" },
+    { icon: Activity, titleKey: "services.ac.cassette", descKey: "services.ac.cassette.desc" },
+    { icon: ArrowDownToLine, titleKey: "services.ac.duct", descKey: "services.ac.duct.desc" },
+    { icon: Activity, titleKey: "services.ac.pipe", descKey: "services.ac.pipe.desc" },
+    { icon: Box, titleKey: "services.ac.package", descKey: "services.ac.package.desc" },
   ];
 
   const buyingServices = [
-    { icon: Recycle, titleKey: "services.buying.old", descKey: "" },
-    { icon: Coins, titleKey: "services.buying.scrap", descKey: "" },
-    { icon: Coins, titleKey: "services.buying.metals", descKey: "" },
+    { icon: Recycle, titleKey: "services.buying.old", descKey: "services.buying.old.desc" },
+    { icon: Coins, titleKey: "services.buying.scrap", descKey: "services.buying.scrap.desc" },
+    { icon: Coins, titleKey: "services.buying.metals", descKey: "services.buying.metals.desc" },
   ];
 
   return (
