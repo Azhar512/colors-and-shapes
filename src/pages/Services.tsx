@@ -46,7 +46,7 @@ export default function Services() {
     { icon: ArrowDownToLine, titleKey: "services.ac.duct", descKey: "services.ac.duct.desc", image: serviceDuctCustom },
     { icon: Activity, titleKey: "services.ac.pipe", descKey: "services.ac.pipe.desc", image: servicePipeCustom },
     { icon: Box, titleKey: "services.ac.package", descKey: "services.ac.package.desc", image: servicePackageCustom },
-    { icon: Recycle, titleKey: "services.buying.windowSplit", descKey: "services.buying.windowSplit.desc", image: acBuying },
+    { icon: Recycle, titleKey: "services.buying.windowSplit.title", descKey: "services.buying.windowSplit.desc", image: acBuying },
   ];
 
   const buyingServices = [
