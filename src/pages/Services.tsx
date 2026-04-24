@@ -8,6 +8,9 @@ import serviceAc from "@/assets/service-ac.jpg";
 import serviceWashing from "@/assets/service-washing.jpg";
 import serviceFridge from "@/assets/service-fridge.jpg";
 import serviceKitchen from "@/assets/service-kitchen.jpg";
+import acTypes from "@/assets/ac-types.png";
+import acBuying from "@/assets/ac-buying.png";
+import acPiping from "@/assets/ac-piping.png";
 
 export default function Services() {
   const { t } = useI18n();
@@ -24,19 +27,19 @@ export default function Services() {
     { icon: Snowflake, titleKey: "services.ac.gas", descKey: "services.ac.gas.desc" },
     { icon: Zap, titleKey: "services.ac.electrical", descKey: "services.ac.electrical.desc" },
     { icon: CheckCircle2, titleKey: "services.ac.install", descKey: "services.ac.install.desc" },
-    { icon: Wind, titleKey: "services.ac.split", descKey: "services.ac.split.desc" },
-    { icon: Layout, titleKey: "services.ac.window", descKey: "services.ac.window.desc" },
-    { icon: Grid, titleKey: "services.ac.wall", descKey: "services.ac.wall.desc" },
-    { icon: Activity, titleKey: "services.ac.cassette", descKey: "services.ac.cassette.desc" },
-    { icon: ArrowDownToLine, titleKey: "services.ac.duct", descKey: "services.ac.duct.desc" },
-    { icon: Activity, titleKey: "services.ac.pipe", descKey: "services.ac.pipe.desc" },
-    { icon: Box, titleKey: "services.ac.package", descKey: "services.ac.package.desc" },
+    { icon: Wind, titleKey: "services.ac.split", descKey: "services.ac.split.desc", image: acTypes },
+    { icon: Layout, titleKey: "services.ac.window", descKey: "services.ac.window.desc", image: acTypes },
+    { icon: Grid, titleKey: "services.ac.wall", descKey: "services.ac.wall.desc", image: acTypes },
+    { icon: Activity, titleKey: "services.ac.cassette", descKey: "services.ac.cassette.desc", image: acTypes },
+    { icon: ArrowDownToLine, titleKey: "services.ac.duct", descKey: "services.ac.duct.desc", image: acTypes },
+    { icon: Activity, titleKey: "services.ac.pipe", descKey: "services.ac.pipe.desc", image: acPiping },
+    { icon: Box, titleKey: "services.ac.package", descKey: "services.ac.package.desc", image: acTypes },
   ];
 
   const buyingServices = [
-    { icon: Recycle, titleKey: "services.buying.old", descKey: "services.buying.old.desc" },
-    { icon: Coins, titleKey: "services.buying.scrap", descKey: "services.buying.scrap.desc" },
-    { icon: Coins, titleKey: "services.buying.metals", descKey: "services.buying.metals.desc" },
+    { icon: Recycle, titleKey: "services.buying.old", descKey: "services.buying.old.desc", image: acBuying },
+    { icon: Coins, titleKey: "services.buying.scrap", descKey: "services.buying.scrap.desc", image: acBuying },
+    { icon: Coins, titleKey: "services.buying.metals", descKey: "services.buying.metals.desc", image: acBuying },
   ];
 
   return (
@@ -113,14 +116,36 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
-                className="bg-card rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all hover:-translate-y-1 flex items-start gap-4"
+                className="bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all hover:-translate-y-1 flex flex-col"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-cta flex items-center justify-center shrink-0 shadow-cta">
-                  <sub.icon className="w-5 h-5 text-cta-foreground" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-foreground mb-1">{t(sub.titleKey)}</h3>
-                  {sub.descKey && <p className="text-sm text-muted-foreground leading-relaxed">{t(sub.descKey)}</p>}
+                {sub.image && (
+                  <div className="h-40 relative">
+                    <img src={sub.image} alt={t(sub.titleKey)} className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                  </div>
+                )}
+                <div className="p-6 flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-cta flex items-center justify-center shrink-0 shadow-cta">
+                      <sub.icon className="w-5 h-5 text-cta-foreground" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-foreground mb-1 leading-tight">{t(sub.titleKey)}</h3>
+                    </div>
+                  </div>
+                  {sub.descKey && <p className="text-sm text-muted-foreground leading-relaxed mb-6 flex-grow">{t(sub.descKey)}</p>}
+                  <div className="flex gap-2 mt-auto">
+                    <a href="tel:0580706770" className="flex-1">
+                      <Button variant="cta" size="sm" className="w-full h-8 text-[10px] gap-1 px-2 shadow-cta">
+                        <Phone className="w-3 h-3" /> {t("hero.cta.call")}
+                      </Button>
+                    </a>
+                    <a href="https://wa.me/966543650900" target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button variant="whatsapp" size="sm" className="w-full h-8 text-[10px] gap-1 px-2">
+                        <MessageCircle className="w-3 h-3" /> WhatsApp
+                      </Button>
+                    </a>
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -140,14 +165,36 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
-                className="bg-card rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all hover:-translate-y-1 flex items-start gap-4"
+                className="bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all hover:-translate-y-1 flex flex-col"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shrink-0 shadow-md">
-                  <sub.icon className="w-5 h-5 text-primary-foreground" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-foreground mb-1">{t(sub.titleKey)}</h3>
-                  {sub.descKey && <p className="text-sm text-muted-foreground leading-relaxed">{t(sub.descKey)}</p>}
+                {sub.image && (
+                  <div className="h-40 relative">
+                    <img src={sub.image} alt={t(sub.titleKey)} className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                  </div>
+                )}
+                <div className="p-6 flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shrink-0 shadow-md">
+                      <sub.icon className="w-5 h-5 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-foreground mb-1 leading-tight">{t(sub.titleKey)}</h3>
+                    </div>
+                  </div>
+                  {sub.descKey && <p className="text-sm text-muted-foreground leading-relaxed mb-6 flex-grow">{t(sub.descKey)}</p>}
+                  <div className="flex gap-2 mt-auto">
+                    <a href="tel:0580706770" className="flex-1">
+                      <Button variant="cta" size="sm" className="w-full h-8 text-[10px] gap-1 px-2 shadow-cta">
+                        <Phone className="w-3 h-3" /> {t("hero.cta.call")}
+                      </Button>
+                    </a>
+                    <a href="https://wa.me/966543650900" target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button variant="whatsapp" size="sm" className="w-full h-8 text-[10px] gap-1 px-2">
+                        <MessageCircle className="w-3 h-3" /> WhatsApp
+                      </Button>
+                    </a>
+                  </div>
                 </div>
               </motion.div>
             ))}
