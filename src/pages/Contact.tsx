@@ -16,8 +16,40 @@ export default function Contact() {
   };
 
   const serviceOptions = lang === "ar"
-    ? ["إصلاح المكيفات", "إصلاح الغسالات", "إصلاح الثلاجات", "إصلاح أجهزة المطبخ", "خدمة أخرى"]
-    : ["AC Repair", "Washing Machine Repair", "Refrigerator Repair", "Kitchen Appliance Repair", "Other Service"];
+    ? [
+        "تركيب وصيانة مكيف سبليت",
+        "تركيب وصيانة مكيف شباك",
+        "تركيب وصيانة مكيف جداري",
+        "تركيب وصيانة مكيف كاسيت",
+        "تركيب وصيانة مكيف دكت سبليت",
+        "تأسيس مواسير النحاس والدكت",
+        "شراء مكيفات قديمة",
+        "شراء مكيفات سكراب",
+        "شراء نحاس وألمنيوم وكهرباء",
+        "تركيب وصيانة مكيفات باكج",
+        "إصلاح المكيفات",
+        "إصلاح الغسالات",
+        "إصلاح الثلاجات",
+        "إصلاح أجهزة المطبخ",
+        "خدمة أخرى"
+      ]
+    : [
+        "Split AC Installation & Maintenance",
+        "Window AC Installation & Maintenance",
+        "Wall-mounted AC Installation & Maintenance",
+        "Cassette AC Installation & Maintenance",
+        "Duct Split AC Installation & Maintenance",
+        "Establishment of Copper Pipe and Duct",
+        "Old AC Buyer",
+        "Scrap AC Buyer",
+        "Copper, Aluminum, and Electric Buyer",
+        "Package AC Installation & Maintenance",
+        "AC Repair",
+        "Washing Machine Repair",
+        "Refrigerator Repair",
+        "Kitchen Appliance Repair",
+        "Other Service"
+      ];
 
   const inputClass =
     "w-full rounded-xl border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-colors";

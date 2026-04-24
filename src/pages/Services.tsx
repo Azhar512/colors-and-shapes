@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import { WashingMachine, Snowflake, CookingPot, Phone, MessageCircle, Wrench, Zap, CheckCircle2 } from "lucide-react";
+import { WashingMachine, Snowflake, CookingPot, Phone, MessageCircle, Wrench, Zap, CheckCircle2, Wind, Layout, Grid, ArrowDownToLine, Activity, Box, Recycle, Coins } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Hero } from "@/components/Hero";
 import { useI18n } from "@/lib/i18n";
@@ -24,6 +24,19 @@ export default function Services() {
     { icon: Snowflake, titleKey: "services.ac.gas", descKey: "services.ac.gas.desc" },
     { icon: Zap, titleKey: "services.ac.electrical", descKey: "services.ac.electrical.desc" },
     { icon: CheckCircle2, titleKey: "services.ac.install", descKey: "services.ac.install.desc" },
+    { icon: Wind, titleKey: "services.ac.split", descKey: "" },
+    { icon: Layout, titleKey: "services.ac.window", descKey: "" },
+    { icon: Grid, titleKey: "services.ac.wall", descKey: "" },
+    { icon: Activity, titleKey: "services.ac.cassette", descKey: "" },
+    { icon: ArrowDownToLine, titleKey: "services.ac.duct", descKey: "" },
+    { icon: Activity, titleKey: "services.ac.pipe", descKey: "" },
+    { icon: Box, titleKey: "services.ac.package", descKey: "" },
+  ];
+
+  const buyingServices = [
+    { icon: Recycle, titleKey: "services.buying.old", descKey: "" },
+    { icon: Coins, titleKey: "services.buying.scrap", descKey: "" },
+    { icon: Coins, titleKey: "services.buying.metals", descKey: "" },
   ];
 
   return (
@@ -92,14 +105,14 @@ export default function Services() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-extrabold text-foreground text-center mb-3">{t("services.ac.title")}</h2>
           <div className="mx-auto w-16 h-1 rounded-full bg-gradient-cta mb-10" />
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {acSubServices.map((sub, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
+                transition={{ delay: i * 0.05 }}
                 className="bg-card rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all hover:-translate-y-1 flex items-start gap-4"
               >
                 <div className="w-12 h-12 rounded-xl bg-gradient-cta flex items-center justify-center shrink-0 shadow-cta">
@@ -107,7 +120,34 @@ export default function Services() {
                 </div>
                 <div>
                   <h3 className="font-bold text-foreground mb-1">{t(sub.titleKey)}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{t(sub.descKey)}</p>
+                  {sub.descKey && <p className="text-sm text-muted-foreground leading-relaxed">{t(sub.descKey)}</p>}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-foreground text-center mb-3">Recycling & Buying</h2>
+          <div className="mx-auto w-16 h-1 rounded-full bg-gradient-to-br from-primary to-primary/70 mb-10" />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {buyingServices.map((sub, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05 }}
+                className="bg-card rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all hover:-translate-y-1 flex items-start gap-4"
+              >
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shrink-0 shadow-md">
+                  <sub.icon className="w-5 h-5 text-primary-foreground" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-foreground mb-1">{t(sub.titleKey)}</h3>
+                  {sub.descKey && <p className="text-sm text-muted-foreground leading-relaxed">{t(sub.descKey)}</p>}
                 </div>
               </motion.div>
             ))}
