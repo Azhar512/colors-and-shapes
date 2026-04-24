@@ -11,7 +11,7 @@ import serviceKitchen from "@/assets/service-kitchen.jpg";
 import acTypes from "@/assets/ac-types.png";
 import acBuying from "@/assets/ac-buying.png";
 import acPiping from "@/assets/ac-piping.png";
-import serviceCleaningCustom from "@/assets/service-cleaning-custom.jpg";
+import serviceCleaningCustom from "@/assets/service-cleaning-v2.jpg";
 
 export default function Services() {
   const { t } = useI18n();
@@ -177,7 +177,7 @@ export default function Services() {
                     <img 
                       src={sub.image} 
                       alt={t(sub.titleKey)} 
-                      className="w-full h-full object-cover object-[center_35%] scale-[1.3] transition-transform duration-500 hover:scale-[1.5]" 
+                      className="w-full h-full object-cover object-center scale-105 transition-transform duration-500 hover:scale-110" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                   </div>
