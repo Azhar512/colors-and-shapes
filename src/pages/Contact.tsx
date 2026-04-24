@@ -11,8 +11,25 @@ export default function Contact() {
   const { t, lang } = useI18n();
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get("name") as string;
+    const phone = formData.get("phone") as string;
+    const countryCode = formData.get("countryCode") as string;
+    const address = formData.get("address") as string;
+    const service = formData.get("service") as string;
+    const message = formData.get("message") as string;
+
+    const fullPhone = `${countryCode} ${phone}`;
+    
+    // Construct WhatsApp message
+    const msg = lang === "ar"
+      ? `*حجز خدمة جديد*%0A%0A*الاسم:* ${name}%0A*الجوال:* ${fullPhone}%0A*العنوان:* ${address || "غير محدد"}%0A*الخدمة:* ${service}%0A*الرسالة:* ${message || "لا توجد"}`
+      : `*New Service Booking*%0A%0A*Name:* ${name}%0A*Phone:* ${fullPhone}%0A*Address:* ${address || "N/A"}%0A*Service:* ${service}%0A*Message:* ${message || "N/A"}`;
+
+    const whatsappUrl = `https://wa.me/966543650900?text=${msg}`;
+    window.open(whatsappUrl, "_blank");
     setSubmitted(true);
   };
 
@@ -90,26 +107,26 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-1.5">{t("contact.form.name")} *</label>
-                    <input type="text" required maxLength={100} className={inputClass} placeholder={t("contact.form.name")} />
+                    <input name="name" type="text" required maxLength={100} className={inputClass} placeholder={t("contact.form.name")} />
                   </div>
                   <div className="grid grid-cols-[auto_1fr] gap-2">
-                    <select className="rounded-xl border border-input bg-background px-3 py-3 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
-                      <option>🇸🇦 +966</option>
-                      <option>🇦🇪 +971</option>
-                      <option>🇰🇼 +965</option>
-                      <option>🇧🇭 +973</option>
-                      <option>🇶🇦 +974</option>
-                      <option>🇪🇬 +20</option>
+                    <select name="countryCode" className="rounded-xl border border-input bg-background px-3 py-3 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
+                      <option value="+966">🇸🇦 +966</option>
+                      <option value="+971">🇦🇪 +971</option>
+                      <option value="+965">🇰🇼 +965</option>
+                      <option value="+973">🇧🇭 +973</option>
+                      <option value="+974">🇶🇦 +974</option>
+                      <option value="+20">🇪🇬 +20</option>
                     </select>
-                    <input type="tel" required maxLength={20} className={inputClass} placeholder={t("contact.form.phone") + " *"} />
+                    <input name="phone" type="tel" required maxLength={20} className={inputClass} placeholder={t("contact.form.phone") + " *"} />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-1.5">{t("contact.form.address")}</label>
-                    <input type="text" maxLength={200} className={inputClass} placeholder={t("contact.form.address")} />
+                    <input name="address" type="text" maxLength={200} className={inputClass} placeholder={t("contact.form.address")} />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-1.5">{t("contact.form.service")}</label>
-                    <select required className={inputClass}>
+                    <select name="service" required className={inputClass}>
                       <option value="">{t("contact.form.service")}</option>
                       {serviceOptions.map((opt) => (
                         <option key={opt} value={opt}>{opt}</option>
@@ -118,7 +135,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-1.5">{t("contact.form.message")}</label>
-                    <textarea rows={3} maxLength={1000} className={`${inputClass} resize-none`} placeholder={t("contact.form.message")} />
+                    <textarea name="message" rows={3} maxLength={1000} className={`${inputClass} resize-none`} placeholder={t("contact.form.message")} />
                   </div>
                   <Button type="submit" variant="cta" size="lg" className="w-full gap-2 shadow-cta">
                     <Send className="w-4 h-4" /> {t("contact.form.submit")}
