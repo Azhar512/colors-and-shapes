@@ -67,7 +67,7 @@ export function Hero({
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
           transition={{
-            duration: 60,
+            duration: 80,
             repeat: Infinity,
             ease: "linear",
           }}
