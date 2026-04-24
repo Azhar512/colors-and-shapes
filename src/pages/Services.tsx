@@ -27,11 +27,11 @@ export default function Services() {
     { icon: Snowflake, titleKey: "services.ac.gas", descKey: "services.ac.gas.desc", image: "https://images.pexels.com/photos/3825578/pexels-photo-3825578.jpeg?auto=compress&cs=tinysrgb&w=600" },
     { icon: Zap, titleKey: "services.ac.electrical", descKey: "services.ac.electrical.desc", image: "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=600" },
     { icon: CheckCircle2, titleKey: "services.ac.install", descKey: "services.ac.install.desc", image: "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=600" },
-    { icon: Wind, titleKey: "services.ac.split", descKey: "services.ac.split.desc", image: "https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg?auto=compress&cs=tinysrgb&w=600" },
-    { icon: Layout, titleKey: "services.ac.window", descKey: "services.ac.window.desc", image: "https://images.pexels.com/photos/3825580/pexels-photo-3825580.jpeg?auto=compress&cs=tinysrgb&w=600" },
+    { icon: Wind, titleKey: "services.ac.split", descKey: "services.ac.split.desc", image: "https://images.pexels.com/photos/10184427/pexels-photo-10184427.jpeg?auto=compress&cs=tinysrgb&w=600" },
+    { icon: Layout, titleKey: "services.ac.window", descKey: "services.ac.window.desc", image: "https://images.pexels.com/photos/2034360/pexels-photo-2034360.jpeg?auto=compress&cs=tinysrgb&w=600" },
     { icon: Grid, titleKey: "services.ac.wall", descKey: "services.ac.wall.desc", image: "https://images.pexels.com/photos/3825517/pexels-photo-3825517.jpeg?auto=compress&cs=tinysrgb&w=600" },
-    { icon: Activity, titleKey: "services.ac.cassette", descKey: "services.ac.cassette.desc", image: "https://images.pexels.com/photos/3825579/pexels-photo-3825579.jpeg?auto=compress&cs=tinysrgb&w=600" },
-    { icon: ArrowDownToLine, titleKey: "services.ac.duct", descKey: "services.ac.duct.desc", image: "https://images.pexels.com/photos/3825573/pexels-photo-3825573.jpeg?auto=compress&cs=tinysrgb&w=600" },
+    { icon: Activity, titleKey: "services.ac.cassette", descKey: "services.ac.cassette.desc", image: "https://images.pexels.com/photos/10184428/pexels-photo-10184428.jpeg?auto=compress&cs=tinysrgb&w=600" },
+    { icon: ArrowDownToLine, titleKey: "services.ac.duct", descKey: "services.ac.duct.desc", image: "https://images.pexels.com/photos/4589333/pexels-photo-4589333.jpeg?auto=compress&cs=tinysrgb&w=600" },
     { icon: Activity, titleKey: "services.ac.pipe", descKey: "services.ac.pipe.desc", image: "https://images.pexels.com/photos/3825527/pexels-photo-3825527.jpeg?auto=compress&cs=tinysrgb&w=600" },
     { icon: Box, titleKey: "services.ac.package", descKey: "services.ac.package.desc", image: "https://images.pexels.com/photos/3825582/pexels-photo-3825582.jpeg?auto=compress&cs=tinysrgb&w=600" },
   ];
@@ -39,7 +39,7 @@ export default function Services() {
   const buyingServices = [
     { icon: Recycle, titleKey: "services.buying.old", descKey: "services.buying.old.desc", image: "https://images.pexels.com/photos/259251/pexels-photo-259251.jpeg?auto=compress&cs=tinysrgb&w=600" },
     { icon: Coins, titleKey: "services.buying.scrap", descKey: "services.buying.scrap.desc", image: "https://images.pexels.com/photos/259249/pexels-photo-259249.jpeg?auto=compress&cs=tinysrgb&w=600" },
-    { icon: Coins, titleKey: "services.buying.metals", descKey: "services.buying.metals.desc", image: "https://images.pexels.com/photos/259251/pexels-photo-259251.jpeg?auto=compress&cs=tinysrgb&w=600" },
+    { icon: Coins, titleKey: "services.buying.metals", descKey: "services.buying.metals.desc", image: "https://images.pexels.com/photos/5664619/pexels-photo-5664619.jpeg?auto=compress&cs=tinysrgb&w=600" },
   ];
 
   return (
