@@ -54,7 +54,7 @@ export function Hero({
     { icon: ShieldCheck, label: t("trust.warranty") },
     { icon: Award, label: t("trust.licensed") },
   ];
-  
+
 
 
   return (
@@ -67,7 +67,7 @@ export function Hero({
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
           transition={{
-            duration: 1920,
+            duration: 200,
             repeat: Infinity,
             ease: "linear",
           }}
@@ -117,9 +117,8 @@ export function Hero({
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.05 }}
-            className={`font-extrabold leading-[1.05] tracking-tight ${
-              isHome ? "text-4xl sm:text-5xl md:text-6xl lg:text-7xl" : "text-3xl sm:text-4xl md:text-5xl"
-            }`}
+            className={`font-extrabold leading-[1.05] tracking-tight ${isHome ? "text-4xl sm:text-5xl md:text-6xl lg:text-7xl" : "text-3xl sm:text-4xl md:text-5xl"
+              }`}
           >
             {title}
             {titleAccent && (
@@ -135,9 +134,8 @@ export function Hero({
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.18 }}
-              className={`mt-5 max-w-2xl text-hero-foreground/85 leading-relaxed ${
-                isHome ? "text-lg md:text-xl" : "text-base md:text-lg"
-              }`}
+              className={`mt-5 max-w-2xl text-hero-foreground/85 leading-relaxed ${isHome ? "text-lg md:text-xl" : "text-base md:text-lg"
+                }`}
             >
               {subtitle}
             </motion.p>
