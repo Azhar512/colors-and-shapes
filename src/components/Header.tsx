@@ -6,23 +6,6 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import logoNew from "@/assets/logo-new.jpg";
 
-export function PromoBanner() {
-  const { t } = useI18n();
-  const [visible, setVisible] = useState(true);
-  if (!visible) return null;
-  return (
-    <div className="bg-gradient-cta text-promo-foreground text-center py-2.5 px-4 text-sm font-medium relative overflow-hidden">
-      <div className="absolute inset-0 opacity-20 animate-shimmer bg-gradient-to-r from-transparent via-white/40 to-transparent" />
-      <span className="relative">{t("promo.text")}</span>
-      <span className="mx-2 relative">·</span>
-      <span className="opacity-90 relative">{t("promo.cta")}</span>
-      <button onClick={() => setVisible(false)} className="absolute right-3 top-1/2 -translate-y-1/2 opacity-70 hover:opacity-100" aria-label="Dismiss">
-        <X className="w-4 h-4" />
-      </button>
-    </div>
-  );
-}
-
 export function Header() {
   const { t, lang, setLang, dir } = useI18n();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,9 +29,7 @@ export function Header() {
   ];
 
   return (
-    <>
-      <PromoBanner />
-      <header
+    <header
         className={cn(
           "sticky top-0 z-50 transition-all duration-300",
           scrolled ? "bg-card/85 backdrop-blur-xl border-b border-border shadow-sm" : "bg-card/60 backdrop-blur-md border-b border-transparent",
@@ -145,6 +126,5 @@ export function Header() {
           </div>
         )}
       </header>
-    </>
   );
 }
