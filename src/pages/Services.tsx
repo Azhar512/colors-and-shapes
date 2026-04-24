@@ -177,7 +177,7 @@ export default function Services() {
                     <img 
                       src={sub.image} 
                       alt={t(sub.titleKey)} 
-                      className="w-full h-full object-cover object-bottom scale-[1.7] origin-bottom transition-transform duration-500 hover:scale-[1.9]" 
+                      className="w-full h-full object-cover object-[center_35%] scale-[1.3] transition-transform duration-500 hover:scale-[1.5]" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                   </div>
