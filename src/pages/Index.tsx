@@ -32,6 +32,25 @@ export default function Index() {
     { icon: Snowflake, image: serviceCleaningCustom, titleKey: "services.ac.cleaning", descKey: "services.ac.cleaning.desc" },
   ];
 
+  const allServices = [
+    "services.ac.title",
+    "services.fridge.title",
+    "services.ac.cleaning",
+    "services.ac.gas",
+    "services.ac.electrical",
+    "services.ac.install",
+    "services.ac.split",
+    "services.ac.window",
+    "services.ac.wall",
+    "services.ac.cassette",
+    "services.ac.duct",
+    "services.ac.pipe",
+    "services.ac.package",
+    "services.buying.old",
+    "services.buying.scrap",
+    "services.buying.metals",
+  ];
+
   const quickServices = [
     { icon: Snowflake, titleKey: "services.ac.title", descKey: "services.ac.cleaning" },
     { icon: Wrench, titleKey: "services.ac.gas", descKey: "services.ac.gas.desc" },
@@ -58,6 +77,19 @@ export default function Index() {
         <title>Colors and Shapes — Fast & Reliable Appliance Repair in Jeddah</title>
         <meta name="description" content="Same-day home appliance repair in Jeddah. Washing machines, refrigerators, AC & kitchen appliances. Certified technicians. Call now!" />
       </Helmet>
+
+      {/* Services Marquee at Top */}
+      <div className="bg-primary/5 border-b border-primary/10 overflow-hidden py-3 relative isolate z-10">
+        <div className="flex gap-8 animate-marquee w-max items-center whitespace-nowrap">
+          {[...allServices, ...allServices, ...allServices].map((svcKey, i) => (
+            <div key={i} className="flex items-center gap-3 text-xs sm:text-sm font-bold text-primary/90">
+              <span className="w-1.5 h-1.5 rounded-full bg-cta shadow-cta" />
+              <span>{t(svcKey)}</span>
+              <span className="ml-8 text-primary/20 font-light">/</span>
+            </div>
+          ))}
+        </div>
+      </div>
 
       <Hero
         variant="home"
