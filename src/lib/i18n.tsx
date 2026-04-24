@@ -71,6 +71,8 @@ const translations: Translations = {
   "services.buying.scrap.desc": { en: "Best prices for non-functional scrap AC units and recycling parts responsibly.", ar: "أفضل الأسعار لوحدات التكييف الخردة غير الشغالة وإعادة تدوير القطع بمسؤولية." },
   "services.buying.metals": { en: "Copper, Aluminum, and Electric wire Buyer", ar: "شراء نحاس وألمنيوم وكهرباء" },
   "services.buying.metals.desc": { en: "Top market rates for scrap copper, aluminum, and electrical wiring components.", ar: "أعلى أسعار السوق لنفايات النحاس والألمنيوم ومكونات الأسلاك الكهربائية." },
+  "services.buying.windowSplit.title": { en: "Buy & Sell Old Window & Split AC", ar: "شراء وبيع مكيفات شباك وسبليت مستعملة" },
+  "services.buying.windowSplit.desc": { en: "We buy and sell used window and split air conditioners in good condition at the best prices.", ar: "نشتري ونبيع مكيفات الشباك والسبليت المستعملة بحالة جيدة وبأفضل الأسعار في السوق." },
 
   "why.title": { en: "Why Choose Us", ar: "لماذا تختارنا" },
   "why.subtitle": { en: "We deliver excellence in every repair", ar: "نقدم التميز في كل إصلاح" },
