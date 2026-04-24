@@ -22,6 +22,7 @@ import serviceCassetteCustom from "@/assets/service-cassette-custom.jpg";
 import serviceDuctCustom from "@/assets/service-duct-custom.jpg";
 import servicePipeCustom from "@/assets/service-pipe-custom.jpg";
 import servicePackageCustom from "@/assets/service-package-custom.jpg";
+import serviceOldAcBuyer from "@/assets/service-old-ac-buyer.jpg";
 
 export default function Services() {
   const { t } = useI18n();
@@ -48,7 +49,7 @@ export default function Services() {
   ];
 
   const buyingServices = [
-    { icon: Recycle, titleKey: "services.buying.old", descKey: "services.buying.old.desc", image: "https://images.pexels.com/photos/259251/pexels-photo-259251.jpeg?auto=compress&cs=tinysrgb&w=600" },
+    { icon: Recycle, titleKey: "services.buying.old", descKey: "services.buying.old.desc", image: serviceOldAcBuyer },
     { icon: Coins, titleKey: "services.buying.scrap", descKey: "services.buying.scrap.desc", image: "https://images.pexels.com/photos/259249/pexels-photo-259249.jpeg?auto=compress&cs=tinysrgb&w=600" },
     { icon: Coins, titleKey: "services.buying.metals", descKey: "services.buying.metals.desc", image: "https://images.pexels.com/photos/5664619/pexels-photo-5664619.jpeg?auto=compress&cs=tinysrgb&w=600" },
   ];
