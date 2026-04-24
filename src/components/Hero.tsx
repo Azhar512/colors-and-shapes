@@ -1,9 +1,9 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Phone, MessageCircle, ShieldCheck, Clock, Award, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/lib/i18n";
-import heroPoster from "@/assets/hero-repair.jpg";
+import heroBg from "@/assets/hero-bg.jpg";
 
 
 interface HeroProps {
@@ -27,7 +27,6 @@ export function Hero({
   showStats = false,
   children,
 }: HeroProps) {
-  const videoRef = useRef<HTMLVideoElement>(null);
   const { t, dir } = useI18n();
   const isHome = variant === "home";
 
@@ -37,32 +36,19 @@ export function Hero({
     { icon: Award, label: t("trust.licensed") },
   ];
   
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch(error => {
-        console.error("Video autoplay failed:", error);
-      });
-    }
-  }, []);
+
 
   return (
     <section
       className={`relative isolate overflow-hidden ${isHome ? "min-h-[88vh]" : "min-h-[60vh]"}`}
       dir={dir}
     >
-      {/* Background Video */}
-      <video
-        ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        poster={heroPoster}
-      >
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-technician-checking-a-washing-machine-42867-large.mp4" type="video/mp4" />
-      </video>
+      {/* Background Image */}
+      <img
+        src={heroBg}
+        alt="Hero Background"
+        className="absolute inset-0 w-full h-full object-cover object-center scale-105"
+      />
 
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-overlay" />
