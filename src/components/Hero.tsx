@@ -63,8 +63,16 @@ export function Hero({
       dir={dir}
     >
       {/* Services Marquee at Top */}
-      <div className="relative z-20 bg-white/5 border-b border-white/10 overflow-hidden py-3 backdrop-blur-sm">
-        <div dir="ltr" className="flex gap-8 animate-marquee w-max items-center whitespace-nowrap">
+      <div className="relative z-20 bg-white/5 border-b border-white/10 overflow-hidden py-3 backdrop-blur-sm" dir="ltr">
+        <motion.div
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{
+            duration: 60,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+          className="flex gap-8 w-max items-center whitespace-nowrap"
+        >
           {[...allServices, ...allServices, ...allServices, ...allServices].map((svcKey, i) => (
             <div key={i} className="flex items-center gap-3 text-[10px] sm:text-xs font-bold text-white/80 uppercase tracking-widest">
               <span className="w-1.5 h-1.5 rounded-full bg-cta shadow-cta" />
@@ -72,7 +80,7 @@ export function Hero({
               <span className="ml-8 text-white/20 font-light">/</span>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
       {/* Background Image */}
       <img
