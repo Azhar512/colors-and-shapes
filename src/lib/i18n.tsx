@@ -13,8 +13,8 @@ const translations: Translations = {
   "promo.text": { en: "Limited Time — ﷼25 OFF AC Repair", ar: "لفترة محدودة — خصم ﷼25 على إصلاح المكيفات" },
   "promo.cta": { en: "For new customers. Call now!", ar: "للعملاء الجدد. اتصل الآن!" },
 
-  "hero.eyebrow": { en: "Jeddah's #1 Appliance Repair", ar: "الأول في جدة لإصلاح الأجهزة" },
-  "hero.title": { en: "Expert Appliance Repair in Jeddah", ar: "خبراء صيانة الأجهزة المنزلية بجدة" },
+  "hero.eyebrow": { en: "Jeddah's #1 AC Specialist", ar: "الأول في جدة لصيانة المكيفات" },
+  "hero.title": { en: "Expert in Installation and Maintenance of AC", ar: "خبراء في تركيب وصيانة المكيفات" },
   "hero.titleAccent": { en: "Same-Day Service", ar: "خدمة في نفس اليوم" },
   "hero.subtitle": { en: "Fast, certified, and guaranteed repair for washing machines, refrigerators, AC units & kitchen appliances — across every neighborhood in Jeddah.", ar: "إصلاح سريع ومعتمد ومضمون للغسالات والثلاجات والمكيفات وأجهزة المطبخ — في جميع أحياء جدة." },
   "hero.cta.call": { en: "Call Now", ar: "اتصل الآن" },
