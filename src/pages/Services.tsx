@@ -45,11 +45,11 @@ export default function Services() {
     { icon: Activity, titleKey: "services.ac.cassette", descKey: "services.ac.cassette.desc", image: serviceCassetteCustom },
     { icon: ArrowDownToLine, titleKey: "services.ac.duct", descKey: "services.ac.duct.desc", image: serviceDuctCustom },
     { icon: Activity, titleKey: "services.ac.pipe", descKey: "services.ac.pipe.desc", image: servicePipeCustom },
-    { icon: Box, titleKey: "services.ac.package", descKey: "services.ac.package.desc", image: servicePackageCustom },
   ];
 
   const buyingServices = [
     { icon: Recycle, titleKey: "services.buying.windowSplit", descKey: "services.buying.windowSplit.desc", image: acBuying },
+    { icon: Box, titleKey: "services.ac.package", descKey: "services.ac.package.desc", image: servicePackageCustom },
     { icon: Recycle, titleKey: "services.buying.old", descKey: "services.buying.old.desc", image: serviceOldAcBuyer },
     { icon: Coins, titleKey: "services.buying.scrap", descKey: "services.buying.scrap.desc", image: serviceScrapAcBuyer },
     { icon: Coins, titleKey: "services.buying.metals", descKey: "services.buying.metals.desc", image: serviceMetalsBuyer },
