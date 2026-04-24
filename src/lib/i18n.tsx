@@ -69,7 +69,7 @@ const translations: Translations = {
   "services.buying.old.desc": { en: "We buy your used air conditioners at competitive prices with free pickup service.", ar: "نشتري مكيفاتك المستعملة بأسعار تنافسية مع خدمة نقل مجانية." },
   "services.buying.scrap": { en: "Scrap AC Buyer", ar: "شراء مكيفات خردة (سكراب)" },
   "services.buying.scrap.desc": { en: "Best prices for non-functional scrap AC units and recycling parts responsibly.", ar: "أفضل الأسعار لوحدات التكييف الخردة غير الشغالة وإعادة تدوير القطع بمسؤولية." },
-  "services.buying.metals": { en: "Copper, Aluminum, and Electric Buyer", ar: "شراء نحاس وألمنيوم وكهرباء" },
+  "services.buying.metals": { en: "Copper, Aluminum, and Electric wire Buyer", ar: "شراء نحاس وألمنيوم وكهرباء" },
   "services.buying.metals.desc": { en: "Top market rates for scrap copper, aluminum, and electrical wiring components.", ar: "أعلى أسعار السوق لنفايات النحاس والألمنيوم ومكونات الأسلاك الكهربائية." },
 
   "why.title": { en: "Why Choose Us", ar: "لماذا تختارنا" },
