@@ -17,6 +17,7 @@ import serviceRepairCustom from "@/assets/service-repair-custom.jpg";
 import serviceInstallCustom from "@/assets/service-install-custom.jpg";
 import serviceSplitCustom from "@/assets/service-split-custom.jpg";
 import serviceWindowCustom from "@/assets/service-window-custom.jpg";
+import serviceWallCustom from "@/assets/service-wall-custom.jpg";
 
 export default function Services() {
   const { t } = useI18n();
@@ -35,7 +36,7 @@ export default function Services() {
     { icon: CheckCircle2, titleKey: "services.ac.install", descKey: "services.ac.install.desc", image: serviceInstallCustom },
     { icon: Wind, titleKey: "services.ac.split", descKey: "services.ac.split.desc", image: serviceSplitCustom },
     { icon: Layout, titleKey: "services.ac.window", descKey: "services.ac.window.desc", image: serviceWindowCustom },
-    { icon: Grid, titleKey: "services.ac.wall", descKey: "services.ac.wall.desc", image: "https://images.pexels.com/photos/3825517/pexels-photo-3825517.jpeg?auto=compress&cs=tinysrgb&w=600" },
+    { icon: Grid, titleKey: "services.ac.wall", descKey: "services.ac.wall.desc", image: serviceWallCustom },
     { icon: Activity, titleKey: "services.ac.cassette", descKey: "services.ac.cassette.desc", image: "https://images.pexels.com/photos/10184428/pexels-photo-10184428.jpeg?auto=compress&cs=tinysrgb&w=600" },
     { icon: ArrowDownToLine, titleKey: "services.ac.duct", descKey: "services.ac.duct.desc", image: "https://images.pexels.com/photos/4589333/pexels-photo-4589333.jpeg?auto=compress&cs=tinysrgb&w=600" },
     { icon: Activity, titleKey: "services.ac.pipe", descKey: "services.ac.pipe.desc", image: "https://images.pexels.com/photos/3825527/pexels-photo-3825527.jpeg?auto=compress&cs=tinysrgb&w=600" },
