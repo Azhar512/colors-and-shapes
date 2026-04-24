@@ -23,23 +23,23 @@ export default function Services() {
   ];
 
   const acSubServices = [
-    { icon: Wrench, titleKey: "services.ac.cleaning", descKey: "services.ac.cleaning.desc" },
-    { icon: Snowflake, titleKey: "services.ac.gas", descKey: "services.ac.gas.desc" },
-    { icon: Zap, titleKey: "services.ac.electrical", descKey: "services.ac.electrical.desc" },
-    { icon: CheckCircle2, titleKey: "services.ac.install", descKey: "services.ac.install.desc" },
-    { icon: Wind, titleKey: "services.ac.split", descKey: "services.ac.split.desc", image: acTypes },
-    { icon: Layout, titleKey: "services.ac.window", descKey: "services.ac.window.desc", image: acTypes },
-    { icon: Grid, titleKey: "services.ac.wall", descKey: "services.ac.wall.desc", image: acTypes },
-    { icon: Activity, titleKey: "services.ac.cassette", descKey: "services.ac.cassette.desc", image: acTypes },
-    { icon: ArrowDownToLine, titleKey: "services.ac.duct", descKey: "services.ac.duct.desc", image: acTypes },
-    { icon: Activity, titleKey: "services.ac.pipe", descKey: "services.ac.pipe.desc", image: acPiping },
-    { icon: Box, titleKey: "services.ac.package", descKey: "services.ac.package.desc", image: acTypes },
+    { icon: Wrench, titleKey: "services.ac.cleaning", descKey: "services.ac.cleaning.desc", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" },
+    { icon: Snowflake, titleKey: "services.ac.gas", descKey: "services.ac.gas.desc", image: "https://images.unsplash.com/photo-1591193683515-517359a173e4?auto=format&fit=crop&w=600&q=80" },
+    { icon: Zap, titleKey: "services.ac.electrical", descKey: "services.ac.electrical.desc", image: "https://images.unsplash.com/photo-1581092160233-0601df2048f2?auto=format&fit=crop&w=600&q=80" },
+    { icon: CheckCircle2, titleKey: "services.ac.install", descKey: "services.ac.install.desc", image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80" },
+    { icon: Wind, titleKey: "services.ac.split", descKey: "services.ac.split.desc", image: "https://images.unsplash.com/photo-1621905252457-3e5f20606e98?auto=format&fit=crop&w=600&q=80" },
+    { icon: Layout, titleKey: "services.ac.window", descKey: "services.ac.window.desc", image: "https://images.unsplash.com/photo-1614742780650-6816170138bc?auto=format&fit=crop&w=600&q=80" },
+    { icon: Grid, titleKey: "services.ac.wall", descKey: "services.ac.wall.desc", image: "https://images.unsplash.com/photo-1527011046415-4559249e937a?auto=format&fit=crop&w=600&q=80" },
+    { icon: Activity, titleKey: "services.ac.cassette", descKey: "services.ac.cassette.desc", image: "https://images.unsplash.com/photo-1496307653780-ed21be7d7211?auto=format&fit=crop&w=600&q=80" },
+    { icon: ArrowDownToLine, titleKey: "services.ac.duct", descKey: "services.ac.duct.desc", image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80" },
+    { icon: Activity, titleKey: "services.ac.pipe", descKey: "services.ac.pipe.desc", image: "https://images.unsplash.com/photo-1530124560667-5a3d7b872b78?auto=format&fit=crop&w=600&q=80" },
+    { icon: Box, titleKey: "services.ac.package", descKey: "services.ac.package.desc", image: "https://images.unsplash.com/photo-1584483766624-916c8f946c1e?auto=format&fit=crop&w=600&q=80" },
   ];
 
   const buyingServices = [
-    { icon: Recycle, titleKey: "services.buying.old", descKey: "services.buying.old.desc", image: acBuying },
-    { icon: Coins, titleKey: "services.buying.scrap", descKey: "services.buying.scrap.desc", image: acBuying },
-    { icon: Coins, titleKey: "services.buying.metals", descKey: "services.buying.metals.desc", image: acBuying },
+    { icon: Recycle, titleKey: "services.buying.old", descKey: "services.buying.old.desc", image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80" },
+    { icon: Coins, titleKey: "services.buying.scrap", descKey: "services.buying.scrap.desc", image: "https://images.unsplash.com/photo-1533038751433-2c091564344d?auto=format&fit=crop&w=600&q=80" },
+    { icon: Coins, titleKey: "services.buying.metals", descKey: "services.buying.metals.desc", image: "https://images.unsplash.com/photo-1558441711-bc3a2680696a?auto=format&fit=crop&w=600&q=80" },
   ];
 
   return (
