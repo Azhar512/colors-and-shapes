@@ -30,6 +30,25 @@ export function Hero({
   const { t, dir } = useI18n();
   const isHome = variant === "home";
 
+  const allServices = [
+    "services.ac.title",
+    "services.fridge.title",
+    "services.ac.cleaning",
+    "services.ac.gas",
+    "services.ac.electrical",
+    "services.ac.install",
+    "services.ac.split",
+    "services.ac.window",
+    "services.ac.wall",
+    "services.ac.cassette",
+    "services.ac.duct",
+    "services.ac.pipe",
+    "services.ac.package",
+    "services.buying.old",
+    "services.buying.scrap",
+    "services.buying.metals",
+  ];
+
   const trust = [
     { icon: Clock, label: t("trust.fast") },
     { icon: ShieldCheck, label: t("trust.warranty") },
@@ -43,6 +62,18 @@ export function Hero({
       className={`relative isolate overflow-hidden ${isHome ? "min-h-[88vh]" : "min-h-[60vh]"}`}
       dir={dir}
     >
+      {/* Services Marquee at Top */}
+      <div className="relative z-20 bg-white/5 border-b border-white/10 overflow-hidden py-3 backdrop-blur-sm">
+        <div className="flex gap-8 animate-marquee w-max items-center whitespace-nowrap">
+          {[...allServices, ...allServices, ...allServices].map((svcKey, i) => (
+            <div key={i} className="flex items-center gap-3 text-[10px] sm:text-xs font-bold text-white/80 uppercase tracking-widest">
+              <span className="w-1.5 h-1.5 rounded-full bg-cta shadow-cta" />
+              <span>{t(svcKey)}</span>
+              <span className="ml-8 text-white/20 font-light">/</span>
+            </div>
+          ))}
+        </div>
+      </div>
       {/* Background Image */}
       <img
         src={heroBg}
